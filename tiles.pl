@@ -1,9 +1,9 @@
-board_size(7). % odd number, at least 3
+board_size(9). % odd number, at least 3
 
 eval_pos(Pos,Value):-
 	%% uncomment exactly one of the following lines
-	bLeftOfw(Pos,Value).    
-	%outOfPlace(Pos,1,Value). 
+	%bLeftOfw(Pos,Value).    
+	outOfPlace(Pos,1,Value). 
 
 /*
  * Moves are represented as triples m(From,To,Cost).
