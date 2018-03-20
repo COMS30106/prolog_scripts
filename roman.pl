@@ -17,8 +17,16 @@ d(1,N) --> i(N).
 d(2,N) --> i(N),i(N).
 d(3,N) --> i(N),i(N),i(N).
 d(4,N) --> i(N),v(N).
+%d(4,N) --> i(N),i(N),i(N),i(N).
 d(5,N) --> v(N).
 d(6,N) --> v(N),i(N).
 d(7,N) --> v(N),i(N),i(N).
 d(8,N) --> v(N),i(N),i(N),i(N).
 d(9,N) --> i(N),{N1 is N+1},i(N1).
+
+/** &lt;examples&gt;
+
+?- phrase(roman(1984),R).
+?- phrase(roman(Y),[m,c,m,l,x,x,x,i,v]).
+
+*/
